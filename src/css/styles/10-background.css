@@ -1,0 +1,23 @@
+body{
+  /* 배경 색상 */
+  background-color: hsl(180, 50%, 80%);
+  /* 배경 이미지 */
+  background-image: url(/src/assets/images/rabbit.png);
+  /* 배경 이미지 반복 여부 (반복 안함 no-repeat) repeat-x, repeat-y*/
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치 (단축 표기법) */
+  background-position: 50% 0;
+  /* background-position-x: 30px;
+  background-position-y: 40px; */
+  /* body 요소의 최소 높이 */
+  min-height: 90vh; /* vw 뷰포트 위드 vw 뷰포트 하이트 */
+  background-attachment: fixed; /* 스크롤 했을 때 배경은 움직이지 않고 고정된 것처럼 보일 수 있음 */
+  /* 배경 이미지 크기 */
+  background-size: 100px 130px; /* contain, cover */
+  /* 단축 표기법으로 줄여서 선언 (배경은 본문의 반대. 먼저 선언한 배경이 위에 보이고 나중에 선언한 배경이 아래에 깔림) */
+  background:
+    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed, 
+    linear-gradient(red, green),
+    pink;
+}
