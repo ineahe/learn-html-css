@@ -1,0 +1,68 @@
+@import "/src/common/modern-reset.css";
+
+body{
+  font-family: SUIT, sans-serif;
+}
+
+.card{
+  /* BFC - overflow:hidden, display:flow-root, float:left, position: absolute */
+  /* display: flow-root; */ /* html의 hidden 을 무시함 */
+  /* background: pink; */
+  margin: 2em; /* 16 * 2 = 32px */
+  padding: 2em; /* 16 * 2 = 32px */
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+
+  &.good-partner{
+    display: flow-root;
+  }
+  
+  /* 제목 */
+  .subject{
+    /* background: skyblue; */
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    span{
+      vertical-align: top;
+
+      &[lang="en"]{
+        font-size: 0.5em;
+        /* background: yellow; */
+        position: relative;
+        top: 10px;
+        padding: 5px;
+      }
+    }
+  }  
+
+  img{
+    width: 100px;
+  }
+}
+
+  /* 이미지 */
+  .thumbnail{
+    /* --radius: 50%; */
+
+    border: 1px solid #ccc;
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    border-radius: 50%; /* = var(--radius); */
+    width: 120px;
+    shape-outside: circle(50%); /* 오오... 이뻐보여요 */
+
+    img{
+      max-width: 100%; /* 80px */
+      aspect-ratio: 1/1;
+      border-radius: inherit; /* = var(--radius); */
+      object-fit: cover; /* mdn 참고 */
+      object-position: 0 -15px;
+    }
+  }
+
+  /* 내용 */
+  .content{
+    margin-top: 0.625rem;
+  }
