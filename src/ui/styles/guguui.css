@@ -1,0 +1,82 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+
+.header{
+  background: #FFFF00;
+  height: 10vh;
+}
+
+.navigation{
+  background: #FF0000;
+  height: 20vh;
+}
+
+.content1024{
+  display: flow-root;
+}
+
+.content768{
+  @media (min-width: 768px) {
+    width: 70%;
+    float: left;
+  }
+}
+
+.section1{
+  background: #F5F5DC;
+  height: 20vh;
+
+  @media (min-width: 768px) {
+    background: #FF8000;
+    height: 30vh;
+  }
+
+  @media (min-width: 1024px) {
+    background: #FF8000;
+    width: 50%;
+    height: 60vh;
+    float: left;
+  }
+}
+
+.section2{
+  background: #00FF00;
+  height: 20vh;
+
+  @media (min-width: 768px) {
+    height: 30vh;
+  }  
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    height: 60vh;
+    float: right;
+  }
+}
+
+.sidebar{
+  background: #00FFFF;
+  height: 20vh;
+
+  @media (min-width: 768px) {
+    height: 60vh;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+    height: 60vh; 
+    float: right;  
+  }
+}
+
+.footer{
+  background: #a9a9a9;
+  height: 10vh;
+
+  @media (min-width: 768px) {
+    height: 10vh;
+  }
+  @media (min-width: 1024px) {
+    background: #8800FF;
+  }
+ }
